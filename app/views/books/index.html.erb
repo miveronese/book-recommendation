@@ -1,18 +1,18 @@
 
-<p><h1> Hello, <%= @user_name %>! </h1></p>
+<p><h1 id="greetings"> Hello, <%= @user_name %>! </h1></p>
 
-<h2> You've liked these books: </h2>
+<h2 id="list_titles"> You've liked these books: </h2>
   <% @user_favorite_books.map do |x| %>
-<p> 
+<p id="titles"> 
   - <%= x.title %>
 </p>
 <p>
   <% end %>
 </p>
 
-<h2>Here some reading suggestions based on people with similar taste:</h2>
+<h2 id="list_suggestions">Here some reading suggestions based on people with similar taste:</h2>
 
-<p>
+<p id="recommendations">
   <% @recommendations.each do |title| %><p>
     - <%= title %><p>
   <% end %>

@@ -5,15 +5,9 @@ require 'pry'
 
 describe "Index page" , type: :feature do
 
-  it "should have user's liked books" do
-    visit "/books"
-    expect(page).to have_css("#titles")
+  it "expect to have reading suggestions" do
+    visit "/books?utf8=%E2%9C%93&search=Carol"
+    expect(page).to have_text("Here some reading suggestions based on people with similar taste")
   end
-
-  it "should have recommended books" do
-    visit "/books"
-    expect(page).to have_css("#recommendations")
-  end
-
 
 end

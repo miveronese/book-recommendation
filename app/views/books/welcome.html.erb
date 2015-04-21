@@ -1,6 +1,6 @@
 
-Inform your name to get reading suggestions:
-<p></br>
+<p><h1> Inform your name to get reading suggestions: </h1></p>
+
 <%= form_tag(books_path, :method => 'get', id: "search-form") do %>
   <p> 
     <%= text_field_tag :search, params[:search], placehorlder: "Search User" %>

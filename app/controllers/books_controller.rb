@@ -5,13 +5,12 @@ class BooksController < ApplicationController
 
   def index
     if params[:search]
-      @user_db = User.where("name ILIKE ?", "%#{params[:search]}%")
+      @user_db = User.where("name LIKE ?", "%#{params[:search]}%")
     end 
        
     @user = @user_db.map do |x|
       x.id
     end
-
     
     @user_name_array = @user_db.map do |x|
       x.name

@@ -40,7 +40,7 @@ likes = Like.create([
   { user_id: 4, book_id: 13 }, 
   { user_id: 4, book_id: 5 },
   { user_id: 5, book_id: 1 }
-  ])
+])
 
 users = User.create([
   {name: 'Anna'}, 
@@ -48,7 +48,7 @@ users = User.create([
   {name: 'Carol'}, 
   {name: 'Diana'},
   {name: 'Ellen'}
-  ])
+])
 
 
 

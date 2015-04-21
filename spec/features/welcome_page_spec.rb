@@ -6,12 +6,12 @@ require 'pry'
 describe "Welcome page" , type: :feature do
 
 
-  it "expect to have search form" do
+  it "expect to have a search form" do
     visit "/"
     expect(page).to have_css("#search-form")
   end
 
-  it "expect to have text asking for user's input" do
+  it "expect to have a text asking for user's input" do
     visit "/"
     expect(page).to have_text("Inform your name to get reading suggestions:")
   end

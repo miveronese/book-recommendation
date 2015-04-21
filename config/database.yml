@@ -27,5 +27,5 @@ test:
 
 production:
   adapter: postgresql
-  database: recommendation
+  database: booktips
   host: localhost

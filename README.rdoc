@@ -1,28 +1,38 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* You can see this recommendation engine at http://booktips.herokuapp.com/
 
-Things you may want to cover:
+* To test how this recommendation engine works, go to root path and fill the form with one of the following names:
 
-* Ruby version
+  - Anna
+  - Brigitte
+  - Carol
+  - Diana
+  - Ellen
 
-* System dependencies
+* If you want to run the app locally, after cloning it do:
+  -  rake db:create
+  -  rake db:migrate
+  -  rake db:seed
+
+* To run the specs, first do:
+  - RAILS_ENV=test bundle exec rake db:create 
+  - RAILS_ENV=test bundle exec rake db:migrate
+  - RAILS_ENV=test bundle exec rake db:seed 
+
+* Then, run:
+  - bundle exec rspec
 
 * Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  - Ruby version: 2.1.1
+  - Rails version: 4.1.6
+  - Databases: sqlite3 (development and test), postgresql 
+  (production)
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+
+
+
+
+
+

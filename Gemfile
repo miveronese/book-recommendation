@@ -6,6 +6,10 @@ gem 'rails', '4.1.6'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
   gem 'sqlite3'
+  gem 'rspec-rails', '~> 3.0.0'
+  gem 'factory_girl_rails'
+  gem 'capybara'
+  gem 'database_cleaner'
 end
 
 group :production do

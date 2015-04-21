@@ -1,0 +1,15 @@
+
+<b>Hello, <%= @user_name %>! <p></b>
+
+You've liked these books:
+<% @user_favorite_books.map do |x| %>
+<p>- <%= x.title %><p>
+<p><% end %><p></br>
+
+Here goes some reading suggestions based on people with similar taste:
+
+<p></br>
+<% @recommendations.each do |title| %><p>
+    <b> - <%= title %><p></b>
+  <% end %>
+
